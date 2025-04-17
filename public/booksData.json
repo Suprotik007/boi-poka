@@ -22,7 +22,7 @@
     "rating": 4.8,
     "category": "Fiction",
     "tags": ["Drama", "Social Justice"],
-    "publisher": "J.B. Lippincott & Co.",
+    "publisher": "Lippincott ",
     "yearOfPublishing": 1960
   },
   {
@@ -35,7 +35,7 @@
     "rating": 4.6,
     "category": "Fiction",
     "tags": ["Dystopian", "Political"],
-    "publisher": "Secker & Warburg",
+    "publisher": "Warburg",
     "yearOfPublishing": 1949
   },
   {
@@ -48,7 +48,7 @@
     "rating": 4.3,
     "category": "Fiction",
     "tags": ["Young Adult", "Identity"],
-    "publisher": "Little, Brown and Company",
+    "publisher": "Little Brown",
     "yearOfPublishing": 1951
   },
   {
@@ -61,7 +61,7 @@
     "rating": 4.7,
     "category": "Classic",
     "tags": ["Romance", "Satire"],
-    "publisher": "T. Egerton, Whitehall",
+    "publisher": "T.Whitehall",
     "yearOfPublishing": 1813
   },
   {
