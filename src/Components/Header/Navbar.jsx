@@ -1,13 +1,15 @@
 import React from 'react';
-
+import{Link,NavLink} from 'react-router'
 const Navbar = () => {
     const links=<>
-    <li className='m-2 font-semibold' >Home</li>
-    <li className='m-2 font-semibold'>Listed Books</li>
-    <li className='m-2 font-semibold'>Pages To Read</li>
+   <Link to='/'> <li className='m-2 font-semibold hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black font-mono ' >Home</li></Link>
+
+    <Link to='./about'><li className='m-2 font-semibold font-mono hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black '>About</li></Link>
+
+    <li className='m-2 font-semibold hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black '>Pages To Read</li>
     </>
     return (
-        <div className="navbar bg-black text-white border-1 rounded-2xl shadow-sm">
+        <div className="navbar bg-black text-white border-2  rounded-2xl shadow-sm items-center">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -15,19 +17,19 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm bg-black dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm bg-black dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow ">
         {links}
       </ul>
     </div>
-    <a className="  text-xl font-mono text-black p-2 bg-amber-50 rounded-2xl font-extrabold">Boi🐞Poka</a>
+    <a className="  text-3xl font-mono  p-5 rounded-2xl font-extrabold text-white">Boi🪲Poka</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn rounded-lg">Sign In</a>
+  <div className="navbar-end p-5">
+    <a className="btn rounded-lg hover:bg-amber-100 font-mono font-semibold text-xl">Sign In</a>
   </div>
 </div>
     );
