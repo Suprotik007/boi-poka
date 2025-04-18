@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import SingleBook from '../../Pages/Books2/SingleBook';
+import SingleBook from '../Books2/SingleBook';
 import { FaStarHalfAlt } from "react-icons/fa";
 import { RiBookmark3Fill } from "react-icons/ri";
 import { addToStoreDB } from '../../Utilities/addToDB';

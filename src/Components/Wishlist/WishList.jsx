@@ -24,6 +24,10 @@ const WishList = () => {
       </h2>
       <div className='grid lg:grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1'>
         {wishList.map(b => <SingleBook key={b.bookId} book={b} />)}
+
+        
+      
+          
       </div>
     </div>
   );
