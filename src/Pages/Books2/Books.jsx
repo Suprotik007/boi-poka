@@ -1,17 +1,8 @@
-import React, { Suspense,useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import SingleBook from './SingleBook';
 
 const Books = ({data}) => {
-    const[allBooks,setAllBooks]=useState([]);
-    // useEffect(()=>{
-    //     fetch('booksData.json')
-    //     .then((res=>res.json()))
-    //     .then(data=>{console.log(data);
-    //     })
-    // },[])
-
-    // const bookPromise=fetch('booksData.json')
-    // .then(res=>res.json())
+    
     return (
         <div>
             <h1 className='text-7xl font-semibold font-mono text-center mb-[36px] mt-[100px]'>Books</h1>

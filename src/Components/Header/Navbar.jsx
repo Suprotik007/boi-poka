@@ -4,7 +4,7 @@ const Navbar = () => {
     const links=<>
    <Link to='/'> <li className='m-2 font-semibold hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black font-mono ' >Home</li></Link>
 
-    <Link to='./readList'><li className='m-2 font-semibold font-mono hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black '>Read-List</li></Link>
+    <Link to='./readList'><li className='m-2 font-semibold font-mono hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black '>Read-list</li></Link>
 
     <li className='m-2 font-semibold hover:bg-amber-100 w-fit rounded-2xl p-2 hover:text-black '>Pages To Read</li>
     </>

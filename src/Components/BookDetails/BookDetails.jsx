@@ -4,6 +4,12 @@ import SingleBook from '../../Pages/Books2/SingleBook';
 import { FaStarHalfAlt } from "react-icons/fa";
 import { RiBookmark3Fill } from "react-icons/ri";
 import { addToStoreDB } from '../../Utilities/addToDB';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import { addToWishList } from '../../Utilities/addToWishList';
+
+const MySwal = withReactContent(Swal)
+
 const BookDetails = () => {
     const {id}=useParams()
     const bookId=parseInt(id)
@@ -14,10 +20,26 @@ const BookDetails = () => {
      const {bookName,author,review,image,tags,category,publisher,yearOfPublishing,rating,totalPages}=Book;
 
      const handleMarkAsRead=id=>{
+        MySwal.fire({
+            position: "top-end",
+  icon: "success",
+  title: "added To Read-list",
+  showConfirmButton: false,
+  timer: 1500
+});
         addToStoreDB(id)
 
      }
-    
+    const handleWishList=id=>{
+        MySwal.fire({ 
+            position: "top-end",
+            icon: "success",
+            title: "Added To Wishlist",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        addToWishList(id)
+    }
     
     return (
         <div className=' bg-amber-50 p-10 rounded-2xl mx-auto flex gap-20 mt-10 items-center'>
@@ -44,7 +66,7 @@ const BookDetails = () => {
 <div className='font-mono font-semibold mt-2' > Rating : <span className="badge p-3 font-mono font-semibold items-center bg-blue-200 "><FaStarHalfAlt/>{rating}</span></div>
             <div className='mt-8 '>
             <button onClick={()=>handleMarkAsRead(id)} className="btn btn-accent btn-lg">Mark As Read</button>
-            <button className="btn btn-info m-2 btn-lg "><RiBookmark3Fill /> Add To Wishlist</button>
+            <button onClick={()=>handleWishList(id)} className="btn btn-info m-2 btn-lg "><RiBookmark3Fill /> Add To Wishlist</button>
             </div>
     </div>
             
