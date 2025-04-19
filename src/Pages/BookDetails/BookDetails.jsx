@@ -42,10 +42,10 @@ const BookDetails = () => {
     }
     
     return (
-        <div className=' bg-amber-50 p-10 rounded-2xl mx-auto flex gap-20 mt-10 items-center'>
+        <div className='  bd p-10 rounded-2xl mx-auto  md:flex lg:flex gap-20 mt-10 items-center  '>
             
-            <figure className='w-800 h-180 px-15 py-25 rounded-2xl  b-[#F3F3F1]'>
-    <img className='w-700 h-100  border-2 border-dotted '
+            <figure className='w-800 h-180 px-15 py-25 rounded-2xl  b-[#F3F3F1] hidden md:block lg:block'>
+    <img className='w-700 h-100  border-2 hidden md:block lg:block border-dotted '
       src={image}
       alt="books" />
   </figure>
@@ -66,7 +66,7 @@ const BookDetails = () => {
 <div className='font-mono font-semibold mt-2' > Rating : <span className="badge p-3 font-mono font-semibold items-center bg-blue-200 "><FaStarHalfAlt/>{rating}</span></div>
             <div className='mt-8 '>
             <button onClick={()=>handleMarkAsRead(id)} className="btn btn-accent btn-lg">Mark As Read</button>
-            <button onClick={()=>handleWishList(id)} className="btn btn-info m-2 btn-lg "><RiBookmark3Fill /> Add To Wishlist</button>
+            <button onClick={()=>handleWishList(id)} className="btn btn-info m-2 btn-lg  "><RiBookmark3Fill /> Add To Wishlist</button>
             </div>
     </div>
             

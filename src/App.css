@@ -2,3 +2,24 @@ html{
     background-color:white;
     
 }
+.navbar{
+position: sticky ;
+top: 0;
+z-index: 1000;
+}
+.single-book {
+    transition: transform 0.1s ease; 
+  }
+  
+  .single-book:hover {
+    transform: scale(1.1); 
+    
+  }
+  .bd {
+background:honeydew;
+  }
+  .RL{
+    background: honeydew;
+    row-gap: 20px;
+    column-gap: 20px;
+  }

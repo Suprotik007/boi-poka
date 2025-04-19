@@ -9,7 +9,7 @@ const SingleBook = ({book}) => {
     
     return (
         <Link to={`./bookDetails/${bookId}`}>
-        <div className="card  rounded-3xl w-[374px] h-[480px] shadow-lg  border-dashed border-3 hover:bg-amber-100 md:mx-auto sm:mx-auto">
+        <div className="card single-book rounded-3xl w-[374px] h-[480px] shadow-lg hover:bg-amber-100  border-dashed border-3  md:mx-auto sm:mx-auto">
   <figure className=' px-24 mx-6 mt-8 bg-[#F3F3F1]'>
     <img className='w-[101px] h-[220px] py-8'
       src={image}

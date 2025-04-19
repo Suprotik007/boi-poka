@@ -29,10 +29,10 @@ const storedBookData=getStoredBook()
       <Tab>Added To Wishlist</Tab>
     </TabList>
 
-    <TabPanel className='grid grid-cols-3'>
+    <TabPanel className='grid '>
       <h2 className='  font-mono font-semibold mt-6 p-3 items-center px-5'>Total books: <span className='badge  font-mono font-semibold bg-lime-500 mb-4 mt-4 p-3'>{readList.length}</span></h2>
       
-      <div className='grid lg:grid-cols-3 gap-10 md:grid-cols-2 sm:grid-cols-1 '>
+      <div className='grid sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 RL '>
       
       {
         readList.map(b=><SingleBook key={b.bookId} book={b}></SingleBook>)
@@ -43,7 +43,7 @@ const storedBookData=getStoredBook()
     </TabPanel>
 
     <TabPanel>
-      {/* <Link to={`./bookDetails/${book.bookId}`}><WishList></WishList></Link> */}
+      
       <WishList></WishList>
   
 </TabPanel>
